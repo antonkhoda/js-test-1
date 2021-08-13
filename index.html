@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KR Khoda</title>
+    <link rel="stylesheet" href="./stye.css" />
+  </head>
+  <body>
+    <div class="result wrap">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="panel wrap">
+      <div class="panel-buttons">
+        <input type="button" value="Edit" class="button-is-active" id="edit" />
+        <input type="button" value="Style" id="style" />
+      </div>
+      <div class="panel-content">
+        <div id="panel-edit">
+          <textarea name="edit-textarea" id="edit-textarea"></textarea>
+          <div class="edit-button">
+            <input type="button" value="Add" id="add" />
+            <input type="button" value="Save" id="save" />
+          </div>
+        </div>
+        <div id="panel-style">
+          <h1>Font size</h1>
+          <form name="radio" class="radio">
+            <label for="px12">
+              <input type="radio" id="px12" name="radio" value="12" />12px
+            </label>
+            <label for="px14">
+              <input type="radio" id="px14" name="radio" value="14" />14px
+            </label>
+            <label for="px16">
+              <input type="radio" id="px16" name="radio" value="16" />16px
+            </label>
+            <label for="px18">
+              <input type="radio" id="px18" name="radio" value="18" />18px
+            </label>
+            <label for="px20">
+              <input type="radio" id="px20" name="radio" value="20" />20px
+            </label>
+          </form>
+
+          <h1>Font family</h1>
+          <select name="fontFamily" class="select">
+            <option value="Choose option" selected>Choose option</option>
+            <option value="cursive">cursive</option>
+            <option value="fantasy">fantasy</option>
+            <option value="monospase">monospase</option>
+            <option value="sans-serif">sans-serif</option>
+          </select>
+
+          <h1>Colors</h1>
+          <div class="style-button">
+            <input type="button" value="Color of text" id="colorText" />
+            <input type="button" value="Background color" id="colorBack" />
+          </div>
+
+          <h1>Style</h1>
+          <form name="checkbox" class="checkbox">
+            <label for="boldText">
+              <input type="checkbox" id="boldText" value="bold" />Bold text
+            </label>
+            <label for="cursiveText">
+              <input type="checkbox" id="cursiveText" value="italic" />Cursive
+              text
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="panel-add wrap">
+      <div class="panel-buttons">
+        <input
+          type="button"
+          value="Table"
+          class="button-is-active"
+          id="table"
+        />
+        <input type="button" value="List" id="list" />
+      </div>
+      <form id="panel-table" name="panelTable">
+        <label for="countTR">
+          Count TR:
+          <input type="text" id="countTR" placeholder="Count TR" /> </label
+        ><br />
+        <label for="countTR">
+          Count TD:
+          <input type="text" id="countTD" placeholder="Count TD" /> </label
+        ><br />
+        <h2>Add style to your table:</h2>
+        <label for="widthTD">
+          Width of TD:
+          <input
+            type="text"
+            id="widthTD"
+            placeholder="Width of TD (min 30px)"
+          /> </label
+        ><br />
+        <label for="heightTD">
+          Height of TD:
+          <input
+            type="text"
+            id="heightTD"
+            placeholder="Height of TD (min 30px)"
+          /> </label
+        ><br />
+        <div class="panel-table-border">
+          <label for="borderWith">
+            With of border:
+            <input
+              type="text"
+              id="borderWith"
+              placeholder="With of border (min 1px)"
+            />
+          </label>
+          <label for="borderType"
+            >Type of border:
+            <select name="borderType" id="borderType" class="select">
+              <option value="solid" selected>Solid</option>
+              <option value="dotted">Dotted</option>
+              <option value="dashed">Dashed</option>
+              <option value="double">Double</option>
+              <option value="groove">Groove</option>
+              <option value="ridge">Ridge</option>
+            </select>
+          </label>
+          <label for="borderColor"
+            >Color of border:
+            <select name="borderColor" id="borderColor" class="select">
+              <option value="black" selected>Black</option>
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="green">Green</option>
+            </select>
+          </label>
+        </div>
+        <input type="button" value="Create table" id="createTable" />
+      </form>
+      <form id="panel-list" name="panelList">
+        <label for="countLi">
+          Count Li:
+          <input type="text" id="countLi" placeholder="Count Li" /> </label
+        ><br />
+        <label for="typeOfMarks"
+          >Type of marks:
+          <select name="typeOfMarks" id="typeOfMarks" class="select">
+            <option value="circle" selected>Circle</option>
+            <option value="disc">Disc</option>
+            <option value="square">Square</option>
+          </select>
+        </label>
+        <input type="button" value="Create list" id="createList" />
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
